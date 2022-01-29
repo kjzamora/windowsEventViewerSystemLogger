@@ -1,0 +1,2 @@
+SCHTASKS /CREATE /SC weekly /MO 1 /d SUN /TN "Event Viewer System Error Logger" /TR "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -File C:\log\scripts\EventViewer_System_ErrorLog.ps1"
+SCHTASKS /RUN /TN "Event Viewer System Error Logger"
